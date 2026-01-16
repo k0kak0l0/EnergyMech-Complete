@@ -1,0 +1,11 @@
+{
+  "irc": {
+    "server": "libres.irc-hispano.org",
+    "port": 6669,
+    "nickname": "antonio001",
+    "channel": "#bnc"
+  },
+  "groq": {
+    "api_key": "gsk_XXXXXX_p0n_aquI_TU_API_KEY_DE_GROQ_0000000xxxxxx"
+  }
+}
