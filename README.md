@@ -4,7 +4,7 @@ Sistema completo con bot de IRC y características de juego RPG, generación de 
 
 📁 Estructura del Proyecto Final
 text
-EnergyMech2026//
+EnergyMech2026/\n
 ├── main.py 
 ├── bot_irc.py
 ├── game_system.py
