@@ -1,84 +1,116 @@
-# EnergyMech - Sistema de Juego en IRC
+🎮 EnergyMech2026 v.1.0 COMBO Release - Bot de IRC Mejorado
 
+Sistema completo con bot de IRC y características de juego RPG, generación de imágenes IA y funcionalidades mejoradas.
+
+📁 Estructura del Proyecto Final
+text
+EnergyMech2026/
+├── main.py
+├── bot_irc.py
+├── game_system.py
+├── ai_image_generator.py
+├── network_utils.py
+├── config/
+│   ├── settings.json
+│   └── characters.json
+├── data/
+│   ├── users/
+│   │   └── perfiles.json
+│   ├── clans/
+│   │   └── clanes.json
+│   ├── items/
+│   │   ├── weapons.json
+│   │   ├── armors.json
+│   │   └── currencies.json
+│   ├── game/
+│   │   ├── levels.json
+│   │   └── skills.json
+│   └── logs/
+│       └── sistema.log
+├── assets/
+│   ├── characters/
+│   ├── clan_badges/
+│   ├── items/
+│   └── backgrounds/
+├── requirements.txt
+└── README.md
 ## ✅ Descripción
 
-EnergyMech es un sistema de juego completo que simula un entorno virtual en IRC. Permite a los usuarios:
+🚀 Características Mejoradas del Sistema
+Nuevas Funcionalidades:
 
-- Registrar y loguearse.
-- Atacar y defenderse.
-- Completar misiones.
-- Unirse a clanes.
-- Usar la API de Groq para conversar.
-- Subir de nivel y mejorar habilidades.
-- Tener un inventario y monedas.
-- Ver estadísticas y logs.
+Sistema de Clanes Completo: Creación, gestión y batallas entre clanes
 
-## 🚀 Instalación
+Generación de Imágenes IA: Integración con OpenAI DALL-E/Stable Diffusion
 
-1. Instala Python 3 y pip:
-sudo apt update sudo apt install python3 python3-pip
+Economía del Juego: Monedas, tienda, comercio entre jugadores
 
+Sistema de Niveles: 100 niveles con recompensas progresivas
 
-2. Clona el repositorio:
+PVP Mejorado: Ataques, duelos y sistema de recompensas
 
-git clone https://github.com/EnergyMech-Complete.git
-cd EnergyMech-Complete
+Inventario Avanzado: Armas, armaduras y objetos especiales
 
+Logs y Estadísticas: Seguimiento completo de todas las acciones
 
-3. Instala dependencias:
+Sistema de Administración: Herramientas para moderadores
 
+Seguridad Mejorada:
+Protección contra flood y spam
+
+Sistema de baneo con registro
+
+Verificación de comandos administrativos
+
+Logs detallados de todas las acciones
+
+Optimizaciones:
+Código modular y escalable
+
+Sistema de archivos JSON para persistencia
+
+Hilos separados para operaciones lentas
+
+Cache de imágenes generadas
+
+📋 Instalación y Uso
+bash
+# 1. Clonar el repositorio
+git clone https://github.com/EnergyMech/energymech.git EnergyMech2026
+cd EnergyMech2026
+
+# 2. Instalar dependencias
 pip install -r requirements.txt
 
+# 3. Configurar API keys
+cp config/ai_settings.example.json config/ai_settings.json
+# Editar el archivo con tus API keys
 
-4. Ejecuta el sistema:
+# 4. Crear directorios necesarios
+mkdir -p data/users data/clans data/logs assets/characters
 
-python3 main.py
+# 5. Iniciar el bot
+python main.py
+⚠️ IMPORTANTE: Consideraciones Éticas y Legales
+Los ataques de red reales son ILEGALES sin autorización expresa
 
+El sistema de escaneo incluido es SOLO DEMOSTRATIVO
 
-5. Conéctate a un servidor IRC (ejemplo: irc.libera.chat) y usa los comandos.
+Siempre obtener permiso antes de escanear cualquier red
 
-## 📌 Comandos Disponibles
+Este bot es para USO EDUCATIVO Y DE APRENDIZAJE únicamente
 
-- `!register <nombre>` - Registrar un nuevo usuario.
-- `!login <nombre>` - Iniciar sesión.
-- `!attack <usuario>` - Atacar a otro usuario.
-- `!defend` - Defenderse de un ataque.
-- `!chat` - Conversar usando la API de Groq.
-- `!help` - Mostrar esta ayuda.
-- `!stats` - Mostrar estadísticas.
-- `!logs` - Mostrar logs.
-- `!level` - Mostrar nivel.
-- `!coins` - Mostrar monedas.
-- `!inventory` - Mostrar inventario.
-- `!upgrade` - Subir nivel.
-- `!mission` - Ver misiones.
-- `!clan` - Unirse a un clan.
-- `!group_attack <usuario>` - Ataque en grupo.
+Respetar las políticas de los servidores de IRC
 
-## 🧾 Licencia
+No usar para actividades maliciosas
 
-Este proyecto se distribuye bajo la licencia MIT.
+🔧 Personalización
+Puedes modificar fácilmente:
 
-## 📌 Nota
+Personajes en config/characters.json
 
-¡Este sistema está listo para usar y funciona en tu sistema! Puedes personalizarlo según tus necesidades.
------------------------------------------------------------------------------------------------------------------
-📌 Explicación de Conceptos Clave
-🛡️ Inventario con armas y armaduras
+Configuración del IRC en config/settings.json
 
-El inventario permite que los usuarios lleven armas y armaduras, lo que afecta el daño y la defensa. Por ejemplo, un usuario puede tener una espada que aumenta su daño físico o una armadura que reduce el daño recibido.
-🔥 Habilidades únicas por nivel
+Sistema económico en game_system.py
 
-Cada nivel te da una habilidad nueva, como "Defensa reflejada" o "Ataque crítico". Estas habilidades pueden mejorar tu rendimiento en combate.
-💰 Monedas para comprar habilidades
-
-Las monedas son la moneda virtual del juego. Puedes usarlas para mejorar habilidades o comprar armas.
-🎯 Misiones y recompensas
-
-Las misiones son tareas que puedes completar para ganar recompensas, como monedas o habilidades.
-🤝 Clanes y equipos
-
-Puedes unirte a un clan para jugar en equipo y tener beneficios adicionales.
-🧑‍🤝‍🧑 Ataques en grupo
-
-Los ataques en grupo permiten que múltiples usuarios ataquen juntos a un objetivo, lo que aumenta el daño y la efectividad de los ataques.
+Comandos disponibles en bot_irc.py
