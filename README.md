@@ -21,7 +21,8 @@ sudo apt update sudo apt install python3 python3-pip
 
 2. Clona el repositorio:
 
-git clone https://github.com/EnergyMech-Complete.git cd EnergyMech-Complete
+git clone https://github.com/EnergyMech-Complete.git
+cd EnergyMech-Complete
 
 
 3. Instala dependencias:
