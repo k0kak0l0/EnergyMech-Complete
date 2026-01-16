@@ -1,0 +1,12 @@
+import json
+
+def load_inventory():
+    try:
+        with open("data/inventory.json", "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+def save_inventory(inventory):
+    with open("data/inventory.json", "w") as f:
+        json.dump(inventory, f, indent=4)
