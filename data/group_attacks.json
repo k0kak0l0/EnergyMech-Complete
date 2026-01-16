@@ -1,0 +1,12 @@
+import json
+
+def load_group_attacks():
+    try:
+        with open("data/group_attacks.json", "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+def save_group_attacks(group_attacks):
+    with open("data/group_attacks.json", "w") as f:
+        json.dump(group_attacks, f, indent=4)
