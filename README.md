@@ -1,30 +1,42 @@
-# EnergyMech-Complete
-EnergyMech es un sistema de juego basado en IRC (Internet Relay Chat), que simula un entorno virtual donde los usuarios pueden interactuar, atacar, defenderse, completar misiones, unirse a clanes, y tener un sistema de niveles, monedas, inventario y estadísticas.
+# EnergyMech - Sistema de Juego en IRC
+
+## ✅ Descripción
+
+EnergyMech es un sistema de juego completo que simula un entorno virtual en IRC. Permite a los usuarios:
+
+- Registrar y loguearse.
+- Atacar y defenderse.
+- Completar misiones.
+- Unirse a clanes.
+- Usar la API de Groq para conversar.
+- Subir de nivel y mejorar habilidades.
+- Tener un inventario y monedas.
+- Ver estadísticas y logs.
+
+## 🚀 Instalación
+
+1. Instala Python 3 y pip:
+sudo apt update sudo apt install python3 python3-pip
 
 
-🚀 EnergyMech Bot IRC - Versión Final 2026
+2. Clona el repositorio:
 
-Este bot IRC permite interactuar con usuarios registrados mediante la API de Groq, realizar ataques simulados, y ofrecer ayuda pedagógica en los comandos.
-✅ Características
+git clone https://github.com/EnergyMech-Complete.git cd EnergyMech-Complete
 
-    Sistema de usuarios con registro y login
-    Ataques reales (físicos, mágicos, con efectos)
-    Conversaciones con la API de Groq
-    Ayuda interactiva y pedagógica
-    Log de mensajes y usuarios
-    Optimizado y escalable
-    Economía virtual
-    Niveles de usuarios
-    Estadísticas de ataque y defensa
-    Inventario con armas y armaduras
-    Habilidades únicas por nivel
-    Monedas para comprar habilidades
-    Misiones y recompensas
-    Clanes y equipos
-    Ataques en grupo
+
+3. Instala dependencias:
+
+pip install -r requirements.txt
+
+
+4. Ejecuta el sistema:
+
+python3 main.py
+
+
+5. Conéctate a un servidor IRC (ejemplo: irc.libera.chat) y usa los comandos.
 
 ## 📌 Comandos Disponibles
-	Conéctate a un servidor IRC (ejemplo: irc.libera.chat) y usa los comandos.
 
 - `!register <nombre>` - Registrar un nuevo usuario.
 - `!login <nombre>` - Iniciar sesión.
@@ -49,32 +61,6 @@ Este proyecto se distribuye bajo la licencia MIT.
 ## 📌 Nota
 
 ¡Este sistema está listo para usar y funciona en tu sistema! Puedes personalizarlo según tus necesidades.
-📌 Instalación en Linux
-
-    1. Instalar dependencias:
-
-sudo apt update
-sudo apt install python3 python3-pip
-
-    2. Clonar el repositorio:
-
-git clone https://github.com/EnergyMech/energymech.git
-cd energymech
-
-    3. Crear carpeta y mover archivos:
-
-mkdir energy-mech-irc
-mv * energy-mech-irc/
-cd energy-mech-irc
-
-    4. Instalar dependencias:
-
-pip3 install -r requirements.txt
-
-    5. Ejecutar el bot:
-
-python3 main.py
-
 -----------------------------------------------------------------------------------------------------------------
 📌 Explicación de Conceptos Clave
 🛡️ Inventario con armas y armaduras
