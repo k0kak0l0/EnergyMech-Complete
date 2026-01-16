@@ -4,34 +4,34 @@ Sistema completo con bot de IRC y características de juego RPG, generación de 
 
 📁 Estructura del Proyecto Final
 text
-EnergyMech2026/\n
+EnergyMech2026/
 ├── main.py 
 ├── bot_irc.py
 ├── game_system.py
 ├── ai_image_generator.py
 ├── network_utils.py
-├── config//
+├── config/
 │   ├── settings.json
 │   └── characters.json
-├── data//
-│   ├── users//
+├── data/
+│   ├── users/
 │   │   └── perfiles.json
-│   ├── clans//
+│   ├── clans/
 │   │   └── clanes.json
-│   ├── items//
+│   ├── items/
 │   │   ├── weapons.json
 │   │   ├── armors.json
 │   │   └── currencies.json
-│   ├── game//
+│   ├── game/
 │   │   ├── levels.json
 │   │   └── skills.json
-│   └── logs//
+│   └── logs/
 │       └── sistema.log
-├── assets//
-│   ├── characters//
-│   ├── clan_badges//
-│   ├── items//
-│   └── backgrounds//
+├── assets/
+│   ├── characters/
+│   ├── clan_badges/
+│   ├── items/
+│   └── backgrounds/
 ├── requirements.txt
 └── README.md
 
